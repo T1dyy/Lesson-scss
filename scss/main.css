@@ -1,1 +1,31 @@
-/*# sourceMappingURL=main.css.map */
+body {
+  font-family: Inter;
+}
+
+a {
+  text-decoration: none;
+}
+
+.field {
+  width: 80%;
+  max-width: 1321px;
+  margin: 0 auto;
+  padding: 0 64px;
+}
+
+@font-face {
+  font-family: Inter;
+  src: url(../fonts/Inter-VariableFont_opsz\,wght.ttf);
+}
+.header {
+  background-color: #222222;
+  padding: 16px 0;
+}
+.header__list {
+  display: flex;
+  gap: 10px;
+}
+.header__fl {
+  display: flex;
+  justify-content: space-between;
+}/*# sourceMappingURL=main.css.map */

@@ -1,0 +1,19 @@
+body {
+    font-family: Inter;
+}
+
+a {
+    text-decoration: none;
+}
+
+.field {
+    width: 80%;
+    max-width: 1321px;
+    margin: 0 auto;
+    padding: 0 64px;
+}
+
+@font-face {
+    font-family: Inter;
+    src: url(../fonts/Inter-VariableFont_opsz\,wght.ttf);
+}

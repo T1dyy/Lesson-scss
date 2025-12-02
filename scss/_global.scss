@@ -1,3 +1,5 @@
+@use "variables" as *;
+
 body {
     font-family: Inter;
 }
@@ -11,6 +13,19 @@ a {
     max-width: 1321px;
     margin: 0 auto;
     padding: 0 64px;
+}
+
+.btn {
+    font-family: Inter;
+    font-weight: 600;
+    font-size: 1rem;
+    line-height: 1.5;
+    letter-spacing: 0%;
+    text-align: center;
+    border-radius: 10px;
+    background-color: $blue-btn;
+    color: $ligth-font;
+    padding: 12px 24px;
 }
 
 @font-face {

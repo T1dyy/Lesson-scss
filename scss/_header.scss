@@ -1,5 +1,8 @@
+@use "variables" as *;
+@use "mixins" as *;
+
 .header {
-    background-color: #222222;
+    background-color: $dark-bg;
     padding: 16px 0;
     &__list {
         display: flex;
@@ -8,5 +11,16 @@
     &__fl {
         display: flex;
         justify-content: space-between;
+        align-items: center
+    }
+    &__link {
+        @include textNormal(1rem, 600, 150%);
+    }
+    &__link--home {
+        @include textNormal(1.2rem, 900, 150%);
+        gap: 4px;
+    }
+    &__logo {
+        width: 1.2rem;
     }
 }

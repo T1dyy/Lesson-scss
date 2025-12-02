@@ -13,6 +13,19 @@ a {
   padding: 0 64px;
 }
 
+.btn {
+  font-family: Inter;
+  font-weight: 600;
+  font-size: 1rem;
+  line-height: 1.5;
+  letter-spacing: 0%;
+  text-align: center;
+  border-radius: 10px;
+  background-color: #146EF5;
+  color: #ffffff;
+  padding: 12px 24px;
+}
+
 @font-face {
   font-family: Inter;
   src: url(../fonts/Inter-VariableFont_opsz\,wght.ttf);
@@ -28,4 +41,27 @@ a {
 .header__fl {
   display: flex;
   justify-content: space-between;
+  align-items: center;
+}
+.header__link {
+  font-family: Inter;
+  font-weight: 600;
+  font-size: 1rem;
+  line-height: 150%;
+  letter-spacing: 0%;
+  color: #ffffff;
+  text-align: left;
+}
+.header__link--home {
+  font-family: Inter;
+  font-weight: 900;
+  font-size: 1.2rem;
+  line-height: 150%;
+  letter-spacing: 0%;
+  color: #ffffff;
+  text-align: left;
+  gap: 4px;
+}
+.header__logo {
+  width: 1.2rem;
 }/*# sourceMappingURL=main.css.map */

@@ -1,8 +1,11 @@
-@mixin section_header() {
+@use "variables" as *;
+
+@mixin textNormal($f-size, $f-weight, $l-height, $color: $ligth-font, $align: left) {
   font-family: Inter;
-  font-weight: 700;
-  font-size: 12px;
-  line-height: 120%;
-  text-align: center;
-  color: $ligth-font;
+  font-weight: $f-weight;
+  font-size: $f-size;
+  line-height: $l-height;
+  letter-spacing: 0%;
+  color: $color;
+  text-align: $align;
 }

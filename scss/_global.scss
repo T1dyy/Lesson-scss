@@ -16,16 +16,23 @@ a {
 }
 
 .btn {
+    color: $ligth-font;
     font-family: Inter;
     font-weight: 600;
     font-size: 1rem;
     line-height: 1.5;
     letter-spacing: 0%;
-    text-align: center;
+}
+
+.btn--bl {
     border-radius: 10px;
     background-color: $blue-btn;
     color: $ligth-font;
     padding: 12px 24px;
+}
+
+.btn--tr {
+    color: $ligth-font;
 }
 
 @font-face {

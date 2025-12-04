@@ -1,0 +1,33 @@
+@use "variables" as *;
+@use "mixins" as *;
+
+.banner {
+    background-image: url(../img/bg-banner.png);
+    background-size: 100%;
+
+    &__main {
+        justify-content: center;
+        @include fl(center, center, 0);
+        flex-direction: column;
+        padding-top: 6.25rem
+    }
+
+    &__h1 {
+        @include textNormal(3.5rem, 700, 120%);
+        text-align: center;
+        padding-bottom: 1.5rem;
+    }
+
+    &__p {
+        @include textNormal(1.25rem, 400, 150%);
+        text-align: center;
+        padding-bottom: 3.25rem;
+    }
+    &__btn {
+        margin-bottom: 6.25rem;
+    }
+    &__img {
+        @include fl(center, center, 0);
+        padding-bottom: 3.8125rem;
+    }
+}

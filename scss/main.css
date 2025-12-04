@@ -14,16 +14,23 @@ a {
 }
 
 .btn {
+  color: #ffffff;
   font-family: Inter;
   font-weight: 600;
   font-size: 1rem;
   line-height: 1.5;
   letter-spacing: 0%;
-  text-align: center;
+}
+
+.btn--bl {
   border-radius: 10px;
   background-color: #146EF5;
   color: #ffffff;
   padding: 12px 24px;
+}
+
+.btn--tr {
+  color: #ffffff;
 }
 
 @font-face {
@@ -31,12 +38,12 @@ a {
   src: url(../fonts/Inter-VariableFont_opsz\,wght.ttf);
 }
 .header {
-  background-color: #222222;
+  background-color: #000000;
   padding: 16px 0;
 }
 .header__list {
   display: flex;
-  gap: 10px;
+  gap: 24px;
 }
 .header__fl {
   display: flex;
@@ -64,4 +71,54 @@ a {
 }
 .header__logo {
   width: 1.2rem;
+  margin-right: 8px;
+}
+.header__right {
+  gap: 1.5rem;
+}
+
+.banner {
+  background-image: url(../img/bg-banner.png);
+  background-size: 100%;
+}
+.banner__main {
+  justify-content: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0;
+  flex-direction: column;
+  padding-top: 6.25rem;
+}
+.banner__h1 {
+  font-family: Inter;
+  font-weight: 700;
+  font-size: 3.5rem;
+  line-height: 120%;
+  letter-spacing: 0%;
+  color: #ffffff;
+  text-align: left;
+  text-align: center;
+  padding-bottom: 1.5rem;
+}
+.banner__p {
+  font-family: Inter;
+  font-weight: 400;
+  font-size: 1.25rem;
+  line-height: 150%;
+  letter-spacing: 0%;
+  color: #ffffff;
+  text-align: left;
+  text-align: center;
+  padding-bottom: 3.25rem;
+}
+.banner__btn {
+  margin-bottom: 6.25rem;
+}
+.banner__img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0;
+  padding-bottom: 3.8125rem;
 }/*# sourceMappingURL=main.css.map */

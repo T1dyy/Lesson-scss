@@ -9,3 +9,10 @@
   color: $color;
   text-align: $align;
 }
+
+@mixin fl($j-content: center, $a-items: center, $gap) {
+  display: flex;
+  justify-content: $j-content;
+  align-items: $a-items;
+  gap: $gap;
+}

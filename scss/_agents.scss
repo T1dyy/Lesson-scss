@@ -1,0 +1,43 @@
+@use "mixins" as *;
+@use "variables" as *;
+
+.agents {
+    &__h1 {
+        @include textNormal(3rem, 700, 120%, $dark-font);
+        text-align: center;
+        padding-top: 7.5rem;
+    }
+
+    &__cards {
+        @include fl($gap: 2rem);
+        padding-top: 3.25rem;
+    }
+
+    &__card {
+        border-radius: .75rem;
+        overflow: hidden;
+        position: relative;
+        background-color: black;
+        aspect-ratio: 141/163;
+    }
+
+    &__bg {
+        width: 100%;
+        opacity: 0.8;
+    }
+
+    &__card-title {
+        position: absolute;
+        @include textNormal(1.5rem, 700, 140%);
+        bottom: 2rem;
+        left: 2rem;
+        opacity: 1;
+    }
+
+    &__card div {
+       position:absolutе;
+       bottom: 32px;
+       right: 32px;
+       width: 32px;
+    }
+}

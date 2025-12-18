@@ -1,0 +1,14 @@
+@use "mixins" as *;
+@use "variables" as *;
+
+.accelerate {
+    &__container {
+        display: flex;
+        gap: 9rem;
+        padding-top: 7.5rem;
+    }
+    
+    &__img {
+        width: 100%;
+    }
+}

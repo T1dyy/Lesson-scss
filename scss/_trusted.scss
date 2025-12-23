@@ -1,0 +1,25 @@
+@use "mixins" as *;
+@use "variables" as *;
+
+.trusted {
+    margin-top: 7.5rem;
+    background-color: $neutral-bg;
+
+    &__top {
+        @include fl($gap: 2rem);
+        flex-direction: column;
+        padding-top: 7.5rem;
+    }
+
+    &__h1 {
+        @include textNormal(3rem, 700, 120%, $dark-font);
+        width: 50%;
+        text-align: center;
+    }
+
+    &__a {
+        text-decoration: none;
+        @include textNormal(1.25rem, 600, 140%, $dark-font);
+        @include fl($gap: .25rem)
+    }
+}

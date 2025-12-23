@@ -32,12 +32,23 @@
         bottom: 2rem;
         left: 2rem;
         opacity: 1;
+        width: 50%;
     }
 
     &__card div {
-       position:absolutе;
-       bottom: 32px;
-       right: 32px;
-       width: 32px;
+        position: absolutе;
+        bottom: 32px;
+        right: 32px;
+        width: 32px;
+    }
+
+    &__card-btn {
+        position: absolute;
+        bottom: 20px;
+        right: 20px;
+        width: 25px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
 }

@@ -20,6 +20,81 @@
     &__a {
         text-decoration: none;
         @include textNormal(1.25rem, 600, 140%, $dark-font);
-        @include fl($gap: .25rem)
+        @include fl($gap: .25rem);
+    }
+
+    &__cards {
+        display: grid;
+        grid-template-areas: 
+        "a b c d"
+        "e f f g";
+        grid-template-columns: repeat(4, 1fr);
+        padding-top: 3.25rem;
+        gap: 2rem;
+    }
+
+    &__card {
+        @include fl($j-content: space-between, $a-items: start, $gap: 0);
+        flex-direction: column;
+        border-radius: .75rem;
+        height: 22.75rem;
+        padding: 2rem;
+    }
+
+    &__card--1 {
+        background-color: #AF96F6;
+    }
+
+    &__card--2 {
+        background-color: #96e8f6;
+        color: white;
+    }
+
+    &__card--3 {
+        background-color: white;
+    }
+
+    &__card--4 {
+        background-color: #e2cb58;
+        color: white;
+    }
+
+    &__card--5 {
+        background-color: #43d0a3;
+        color: white;
+    }
+
+    &__card--6 {
+        background-color: white;
+    }
+
+    &__card--7 {
+        background-color: #DEE948;
+    }
+
+    &__h1--card {
+        font-family: Inter;
+        font-size: 3.5rem;
+        font-weight: 700;
+        line-height: 120%;
+    }
+
+    &__p--card {
+        @include textNormal(1.25rem, 400, 150%, $color: $dark-font);
+        padding-bottom: 2rem;
+    }
+
+    &__h2--card {
+        @include textNormal(1.125rem, 600, 150%, $color: $dark-font);
+    }
+
+    &__h3--1 {
+        @include textNormal(1rem, 400, 150%, $color: $dark-font);
+    }
+
+    &__h3--card {
+        font-size: 1.125rem;
+        font-weight: 400;
+        line-height: 150%;
     }
 }

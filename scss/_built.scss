@@ -1,0 +1,23 @@
+@use "mixins" as *;
+@use "variables" as *;
+
+.built {
+    &__h1--top {
+        padding-top: 7.5rem;
+        @include textNormal(3rem, 700, 120%, $dark-font, center);
+    }
+
+    &__p--top {
+        @include textNormal(1.25rem, 400, 150%, $dark-font, center);
+        padding-top: 1rem;
+    }
+
+    &__btn--top {
+        @include fl($gap: .25rem);
+        padding-top: 2rem;
+    }
+
+    &__a--top {
+        @include textNormal(1.25rem, 600, 140%, $dark-font, center);
+    }
+}

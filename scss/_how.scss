@@ -1,0 +1,71 @@
+@use "mixins" as *;
+@use "variables" as *;
+
+.how {
+    &__header {
+        text-align: center;
+        padding-top: 7.5rem;
+        padding-bottom: 3.25rem;
+    }
+
+    &__h1--header {
+        @include textNormal(3rem, 700, 120%, $dark-font, $align: center);
+    }
+
+    &__p--header {
+        @include textNormal(1.25rem, 400, 150%, $dark-font, $align: center);
+    }
+
+    &__bottom {
+        @include fl(space-between, $gap: 2rem);
+        padding-top: 2rem;
+    }
+
+    &__block {
+        border-top: 2px solid;
+        opacity: 50%;
+        border-image-slice: 1;
+        border-image-source: linear-gradient(90deg,rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 1) 0%, rgba(237, 237, 237, 1) 0%, rgba(237, 237, 237, 1) 100%);
+        transition: 0.1s;
+    }
+
+    &__block:hover {
+        border-image-source: linear-gradient(90deg,rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 1) 40%, rgba(237, 237, 237, 1) 40%, rgba(237, 237, 237, 1) 100%);
+        opacity: 100%;
+        animation-name: transition;
+        animation-duration: 0.1s;
+
+    }
+
+    &__h2--bottom {
+        @include textNormal(1.5rem, 700, 140%, $color: $dark-font);
+        padding-top: 1.5rem;
+    }
+
+    &__p--bottom {
+        @include textNormal(1.125rem, 400, 150%, $color: $dark-font);
+        padding-top: 1rem;
+    }
+}
+
+@keyframes transition {
+    0% {
+        border-image-source: linear-gradient(90deg,rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 1) 0%, rgba(237, 237, 237, 1) 0%, rgba(237, 237, 237, 1) 100%);
+    }
+
+    25% {
+        border-image-source: linear-gradient(90deg,rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 1) 10%, rgba(237, 237, 237, 1) 10%, rgba(237, 237, 237, 1) 100%);
+    }
+
+    50% {
+        border-image-source: linear-gradient(90deg,rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 1) 20%, rgba(237, 237, 237, 1) 20%, rgba(237, 237, 237, 1) 100%);
+    }
+
+    75% {
+        border-image-source: linear-gradient(90deg,rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 1) 30%, rgba(237, 237, 237, 1) 30%, rgba(237, 237, 237, 1) 100%);
+    }
+    
+    100%{
+        border-image-source: linear-gradient(90deg,rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 1) 40%, rgba(237, 237, 237, 1) 40%, rgba(237, 237, 237, 1) 100%);
+    }
+}

@@ -371,4 +371,86 @@ a {
   font-size: 1.125rem;
   font-weight: 400;
   line-height: 150%;
+}
+
+.how__header {
+  text-align: center;
+  padding-top: 7.5rem;
+  padding-bottom: 3.25rem;
+}
+.how__h1--header {
+  font-family: Inter;
+  font-weight: 700;
+  font-size: 3rem;
+  line-height: 120%;
+  letter-spacing: 0%;
+  color: #222222;
+  text-align: center;
+}
+.how__p--header {
+  font-family: Inter;
+  font-weight: 400;
+  font-size: 1.25rem;
+  line-height: 150%;
+  letter-spacing: 0%;
+  color: #222222;
+  text-align: center;
+}
+.how__bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 2rem;
+  padding-top: 2rem;
+}
+.how__block {
+  border-top: 2px solid;
+  opacity: 50%;
+  border-image-slice: 1;
+  border-image-source: linear-gradient(90deg, rgb(0, 0, 0) 0%, rgb(0, 0, 0) 0%, rgb(237, 237, 237) 0%, rgb(237, 237, 237) 100%);
+  transition: 0.1s;
+}
+.how__block:hover {
+  border-image-source: linear-gradient(90deg, rgb(0, 0, 0) 0%, rgb(0, 0, 0) 40%, rgb(237, 237, 237) 40%, rgb(237, 237, 237) 100%);
+  opacity: 100%;
+  animation-name: transition;
+  animation-duration: 0.1s;
+}
+.how__h2--bottom {
+  font-family: Inter;
+  font-weight: 700;
+  font-size: 1.5rem;
+  line-height: 140%;
+  letter-spacing: 0%;
+  color: #222222;
+  text-align: left;
+  padding-top: 1.5rem;
+}
+.how__p--bottom {
+  font-family: Inter;
+  font-weight: 400;
+  font-size: 1.125rem;
+  line-height: 150%;
+  letter-spacing: 0%;
+  color: #222222;
+  text-align: left;
+  padding-top: 1rem;
+}
+
+@keyframes transition {
+  0% {
+    border-image-source: linear-gradient(90deg, rgb(0, 0, 0) 0%, rgb(0, 0, 0) 0%, rgb(237, 237, 237) 0%, rgb(237, 237, 237) 100%);
+  }
+  25% {
+    border-image-source: linear-gradient(90deg, rgb(0, 0, 0) 0%, rgb(0, 0, 0) 10%, rgb(237, 237, 237) 10%, rgb(237, 237, 237) 100%);
+  }
+  50% {
+    border-image-source: linear-gradient(90deg, rgb(0, 0, 0) 0%, rgb(0, 0, 0) 20%, rgb(237, 237, 237) 20%, rgb(237, 237, 237) 100%);
+  }
+  75% {
+    border-image-source: linear-gradient(90deg, rgb(0, 0, 0) 0%, rgb(0, 0, 0) 30%, rgb(237, 237, 237) 30%, rgb(237, 237, 237) 100%);
+  }
+  100% {
+    border-image-source: linear-gradient(90deg, rgb(0, 0, 0) 0%, rgb(0, 0, 0) 40%, rgb(237, 237, 237) 40%, rgb(237, 237, 237) 100%);
+  }
 }/*# sourceMappingURL=main.css.map */

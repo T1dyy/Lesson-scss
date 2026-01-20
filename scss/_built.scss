@@ -19,5 +19,57 @@
 
     &__a--top {
         @include textNormal(1.25rem, 600, 140%, $dark-font, center);
+        border-bottom: rgba(0, 0, 0, 0.3) .125rem solid;
+    }
+
+    &__bottom {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 2rem;
+        padding-top: 3.25rem;
+    }
+
+    &__card, &__card--ai {
+        background-color: $neutral-bg;
+        border-radius: .75rem;
+        padding: 2rem;
+        transition: 0.1s;
+    }
+
+    &__card:hover {
+        background-color: $light-bg;
+        box-shadow: 4px 4px 25px 0px rgba(34, 60, 80, 0.15);
+    }
+
+    &__card--ai:hover {
+        background-color: #0056D8;
+    }
+
+    &__card--ai {
+        background-color: #146EF5;
+    }
+
+    &__img--bottom {
+        margin-bottom: 1.75rem;
+    }
+
+    &__h1--bottom, &__h1--ai {
+        margin-bottom: .75rem;
+    }
+
+    &__h1--bottom {
+        @include textNormal(1.5rem, 700, 140%, $dark-font);
+    }
+
+    &__h1--ai {
+        @include textNormal(1.5rem, 700, 140%);
+    }
+
+    &__p--bottom {
+        @include textNormal(1.125rem, 400, 150%, $dark-font);
+    }
+
+    &__p--ai {
+        @include textNormal(1.125rem, 400, 150%);
     }
 }

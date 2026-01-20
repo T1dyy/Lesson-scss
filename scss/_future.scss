@@ -1,0 +1,87 @@
+@use "mixins" as *;
+@use "variables" as *;
+
+.future {
+    &__slider--controller {
+        margin-top: 7.5rem;
+        @include fl(space-between, flex-end, 0);
+    }
+
+    &__h1--controller {
+        @include textNormal(3rem, 700, 120%, $dark-font);
+        margin-bottom: 1rem
+    }
+
+    &__p--controller {
+        @include textNormal(1.25rem, 400, 150%, $dark-font);
+    }
+
+    &__btn--controller {
+        border: none;
+        background-color: $dark-bg;
+        border-radius: 3rem;
+        padding: .75rem;
+        aspect-ratio: 1/1;
+    }
+
+    &__btn--controllerDisabled {
+        border: none;
+        background-color: $dark-bg;
+        border-radius: 3rem;
+        padding: .75rem;
+        aspect-ratio: 1/1;
+        opacity: 30%;
+    }
+
+    &__slider--container {
+        @include fl(center, stretch, 0);
+    }
+
+    &__slider {
+        margin-top: 3.25rem;
+        @include fl(space-around, stretch, $gap: 2rem);
+        width: 120%;
+        flex-shrink: 0;
+        overflow: hidden;
+    }
+
+    &__card--slider {
+        background-image: url(../img/slider-bg.png);
+        background-size: 100%;
+        padding: 1.5rem;
+        border-radius: .75rem;
+        width: calc(100% / 1.2 / 3);
+        flex-shrink: 0;
+        box-sizing: border-box;
+        display: flex;
+        flex-direction: column;
+        transition: 0.2s;
+    }
+
+    &__main--card {
+        padding: 1rem;
+        background-color: $light-bg;
+        border-radius: .75rem;
+        display: flex;
+        flex-direction: column;
+    }
+
+    &__h1--slider {
+        background-color: #146EF51A;
+        @include textNormal(.875rem, 500, 150%, $blue-btn);
+        border-radius: .25rem;
+        display: inline-block;
+        padding: .125rem .25rem;
+    }
+
+    &__h2--slider {
+        @include textNormal(1.25rem, 600, 150%, $dark-font);
+        height: 7.125rem;
+        overflow: hidden;
+    }
+
+    &__a--btn {
+        @include textNormal(1.25rem, 600, 140%, $dark-font, center);
+        border-bottom: rgba(0, 0, 0, 0.3) .125rem solid;
+    }
+}
